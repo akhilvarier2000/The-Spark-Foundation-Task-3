@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Popins",sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2.5rem;
+    background: #222;
+    z-index: 100000;
+
+}
+
+.nav h2{
+    color: #f9f9f9;
+    font-size: 1.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-right: 30px;
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 1rem;
+    
+}
+
+#item li a:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+#item .icon i{
+    color: #fff;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.back{
+    background-image: url(support-the-living-expenses-of-an-orphan-child.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid h3{
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.border{
+   color: #ff5733;
+   border: 1px solid #ff5733;
+   border-radius: 45px;
+   padding: 0.9rem 1.6rem; 
+   font-weight: bold;
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border: 1px solid #fff;
+
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.details h2,h3{
+    color: #fff;
+
+}
+
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details .one h2{
+    color: rgb(43, 235, 187);
+    font-size: 2.5rem;
+    font-family: "Times New Roman", serif;
+    padding-bottom: 1.5rem;
+    text-shadow: 2px 2px #171819;
+}
+
+.details .one h3{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px #171819;
+}
+
+.details .two{
+    width: 50%;
+    border-left: 2px solid #7f8c8d;
+    padding-left: 4rem;
+}
+
+.details .two h2{
+    color: rgb(43, 235, 187);
+    font-size: 2.5rem;
+    font-family: "Times New Roman", serif;
+    padding-bottom: 1.5rem;
+    text-shadow: 2px 2px #171819;
+    align-items: center;
+}
+
+.details .two h3{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px #171819;
+}
+
+.charity{
+    width: 100%;
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.charity .people .founder .founderDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.charity .about{
+    width: 39%;
+}
+
+.charity .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+
+.charity .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.charity .people{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.charity .people .founder{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.charity .people .founder .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.charity .people .founder .founderDetails{
+    padding: 5px 20px 3px 20px;
+
+}
+
+.charity .people .founder .founderDetails{
+    text-align: center;
+}
+
+.charity .people .founder .founderDetails h4{
+    color: #212529;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.contact{
+    padding: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 30%;
+}
+
+.contact .form h2{
+    font-size: 1.5rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0;
+}
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{
+    border: 1px solid #111;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+}
+
+.contact .map{
+    width: 45%;
+}
+
+.contact .map h2{
+    font-size: 1.5rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .map p{
+    font-size: 1.1rem;
+    color: #212529;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.contact .map p i{
+    color:red;
+    padding-right: 4px;
+}
+
+
+.contact .map iframe{
+    width: 100%;
+}
